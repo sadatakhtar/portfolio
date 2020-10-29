@@ -1,0 +1,34 @@
+.quotes{
+    padding-top: 50px;
+    height: 200px;
+    width: 40%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.quotes_quote{
+    font-size: 20px;
+    color: antiquewhite;
+}
+.quotes_author{
+    color: antiquewhite;
+    padding-top: 10px;
+
+}
+.quotes_author > button {
+    background-color:  rgb(88, 114, 235);
+    margin-top: 20px;
+    width: 90px;
+    height: 30px;
+    border-radius: 10px;
+    font-size: 18px;
+    outline: none;
+}
+.quotes_author > button:hover {
+    color: white;
+    background-color: rgb(88, 114, 235);
+}

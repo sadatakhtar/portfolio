@@ -1,0 +1,47 @@
+.header{
+    background-color: #462d66;
+    color: white;
+    font-family: 'roboto';
+    height: 120px;
+    display: flex;
+    justify-content: space-between;
+    
+
+}
+.header_title{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 80%;
+    padding: 20px;
+}
+.header_first_title{
+   
+    width: 40%;
+    display: flex;
+    justify-content: flex-end;
+}
+.header_second_title{
+   
+    height: 50px;
+    font-size: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    
+}
+.header_third_title{
+    
+    width: 65%;
+    display: flex;
+    justify-content: flex-end;
+
+}
+
+.header_logo > img {
+    width: 120px;
+    padding: 20px;
+    background-color: #46738C;
+    border-radius: 50%;
+}

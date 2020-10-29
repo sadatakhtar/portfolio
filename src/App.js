@@ -1,25 +1,40 @@
-import logo from './logo.svg';
+import React, { useState, useEffect } from 'react';
 import './App.css';
+import Footer from './components/Footer';
+import SideBar from './components/SideBar';
+import Body from './components/Body';
+import LoaderMessage from './components/LoaderMessage';
+
+
 
 function App() {
-  return (
+  const [fetchQuote, setFetchQuote] = useState("");
+  const [loader, setLoader] = useState(false);
+
+  useEffect(() => {
+    fetch('https://quotes-cyf.glitch.me/quotes/random')
+    .then(response => {
+      return response.json();
+    })
+    .then(data => {
+      setLoader(true);
+      console.log(data);
+      setFetchQuote(data);
+      
+    })
+  }, []);
+  return loader ? (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <div className="App_container">
+      <SideBar />
+      <Body fetchQuote={fetchQuote} />
+      
+
+      </div>
+     
+     <Footer />
     </div>
-  );
+  ) : <LoaderMessage />
 }
 
 export default App;
