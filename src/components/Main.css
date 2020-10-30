@@ -2,7 +2,7 @@
     color: antiquewhite;
     width: 50%;
     margin: auto;
-    padding-top: 100px;
+    padding-top: 200px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -12,6 +12,7 @@
 .main_img > img{
     width: 100px;
     height: 100px;
+   
 }
 .main_punchline > h2{
     font-size: 40px;

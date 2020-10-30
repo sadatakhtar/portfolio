@@ -5,6 +5,8 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    
+    font-family: 'san serif';
+    font-weight: 100;
+    padding-left: 400px;
 
 }

@@ -1,11 +1,11 @@
 .header{
     background-color: #462d66;
     color: white;
-    font-family: 'roboto';
+    font-family: 'san serif';
     height: 120px;
     display: flex;
     justify-content: space-between;
-    
+    padding-left: 200px;
 
 }
 .header_title{
@@ -16,13 +16,13 @@
     padding: 20px;
 }
 .header_first_title{
-   
+    letter-spacing: 3px;
     width: 40%;
     display: flex;
     justify-content: flex-end;
 }
 .header_second_title{
-   
+    letter-spacing: 5px;
     height: 50px;
     font-size: 40px;
     display: flex;
@@ -32,11 +32,11 @@
     
 }
 .header_third_title{
-    
+    letter-spacing: 3px;
     width: 65%;
     display: flex;
     justify-content: flex-end;
-
+    padding-left: 300px;
 }
 
 .header_logo > img {
