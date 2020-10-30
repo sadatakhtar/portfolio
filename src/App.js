@@ -3,7 +3,7 @@ import './App.css';
 import Footer from './components/Footer';
 import SideBar from './components/SideBar';
 import Body from './components/Body';
-import LoaderMessage from './components/LoaderMessage';
+
 
 
 
