@@ -9,7 +9,7 @@ import LoaderMessage from './components/LoaderMessage';
 
 function App() {
   const [fetchQuote, setFetchQuote] = useState("");
-  const [loader, setLoader] = useState(false);
+  const [loader, setLoader] = useState(true);
 
   useEffect(() => {
     fetch('https://quotes-cyf.glitch.me/quotes/random')
@@ -17,13 +17,15 @@ function App() {
       return response.json();
     })
     .then(data => {
-      setLoader(true);
+      //setLoader(true);
       console.log(data);
       setFetchQuote(data);
+      setLoader(false);
+     
       
     })
   }, []);
-  return loader ? (
+  return loader ? <LoaderMessage /> : (
     <div className="App">
       <div className="App_container">
       <SideBar />
@@ -34,7 +36,7 @@ function App() {
      
      <Footer />
     </div>
-  ) : <LoaderMessage />
+  ) 
 }
 
 export default App;
