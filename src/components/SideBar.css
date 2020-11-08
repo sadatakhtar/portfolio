@@ -34,3 +34,11 @@
     border-top: 1px dsolid rgb(27, 26, 26);
     margin: auto;
 }
+.sidebar_list > p > a{
+    list-style: none;
+    color: antiquewhite;
+    text-decoration: none;
+}
+.sidebar_list > p > a:hover{
+    color: hotpink;
+}

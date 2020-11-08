@@ -9,10 +9,10 @@ function SideBar() {
             </div>
             <hr className="hr"/>
             <div className="sidebar_list">
-            <p>Projects</p>
-            <p>CV</p>
-            <p>About</p>
-            <p>Contact</p>
+            <p><a href="https://www.google.com">Projects</a></p>
+            <p><a href="https://www.google.com">CV</a></p>
+            <p><a href="https://www.google.com">About</a></p>
+            <p><a href="https://www.google.com">Contact</a></p>
             </div>
             <hr className="hr"/>
            
